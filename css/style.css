@@ -1,0 +1,144 @@
+/* ====== ESTILOS BASE ====== */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.form-grup {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grup label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.form-grup input,
+.form-grup textarea,
+.form-grup select {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-grup input:focus,
+.form-grup textarea:focus,
+.form-grup select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 6px var(--primary-light);
+}
+
+.form-btn {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-btn:hover {
+  transform: scale(1.02);
+}
+
+/* ====== TEMA 1: Corporative blue ====== */
+.theme-blue {
+  --primary: #1e3a8a;
+  --primary-light: rgba(30, 58, 138, 0.4);
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.theme-blue h2 {
+  color: #1e3a8a;
+}
+
+.theme-blue .form-btn {
+  background: #1e3a8a;
+  color: white;
+}
+
+/* ====== TEMA 2: DARK elegant ====== */
+.theme-dark {
+  --primary: #6d28d9;
+  --primary-light: rgba(109, 40, 217, 0.4);
+  background: #1f2937;
+  color: #f3f4f6;
+}
+
+.theme-dark input,
+.theme-dark textarea,
+.theme-dark select {
+  background: #374151;
+  color: #f3f4f6;
+  border: 1px solid #4b5563;
+}
+
+.theme-dark .form-btn {
+  background: #6d28d9;
+  color: white;
+}
+
+/* ====== TEMA 3: Green modern ====== */
+.theme-green {
+  --primary: #025b40;
+  --primary-light: rgba(5, 150, 105, 0.4);
+  background: #ecfdf5;
+  color: #064e3b;
+}
+
+.theme-green h2 {
+  color: #065f46;
+}
+
+.theme-green .form-btn {
+  background: #025b40;
+  color: white;
+}
+
+/* ====== TEMA 4: minimal ====== */
+.theme-minimal {
+  --primary: #374151;
+  --primary-light: rgba(55, 65, 81, 0.3);
+  background: #fafafa;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+.theme-minimal h2 {
+  font-weight: 500;
+  color: #111827;
+}
+
+.theme-minimal .form-btn {
+  background: #374151;
+  color: white;
+}
+
+form > fieldset > div {
+    padding: 16px;
+}
+
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+}
+
