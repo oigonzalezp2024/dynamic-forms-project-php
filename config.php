@@ -7,6 +7,14 @@ $formMinimal = [
     'formTitle' => 'Request Form',
     'buttonName' => 'Submit Request',
     'fields' => [
+        // hidden field
+        [
+            "fieldType" => "text",
+            "fieldId" => "user_id",
+            "fieldName" => "user_id",
+            "fieldValue" => "12345",
+            "hidden" => true // hidden
+        ],
         // Text field
         [
             "fieldType" => "text",
@@ -94,6 +102,14 @@ $formBlue = [
     'formTitle' => 'Request Form',
     'buttonName' => 'Submit Request',
     'fields' => [
+        // hidden field
+        [
+            "fieldType" => "text",
+            "fieldId" => "user_id",
+            "fieldName" => "user_id",
+            "fieldValue" => "12345",
+            "hidden" => true // hidden
+        ],
         // Text field
         [
             "fieldType" => "text",
@@ -181,6 +197,14 @@ $formGreen = [
     'formTitle' => 'Request Form',
     'buttonName' => 'Submit Request',
     'fields' => [
+        // hidden field
+        [
+            "fieldType" => "text",
+            "fieldId" => "user_id",
+            "fieldName" => "user_id",
+            "fieldValue" => "12345",
+            "hidden" => true // hidden
+        ],
         // Text field
         [
             "fieldType" => "text",
@@ -268,6 +292,14 @@ $formDark = [
     'formTitle' => 'Request Form',
     'buttonName' => 'Submit Request',
     'fields' => [
+        // hidden field
+        [
+            "fieldType" => "text",
+            "fieldId" => "user_id",
+            "fieldName" => "user_id",
+            "fieldValue" => "12345",
+            "hidden" => true // hidden
+        ],
         // Text field
         [
             "fieldType" => "text",
