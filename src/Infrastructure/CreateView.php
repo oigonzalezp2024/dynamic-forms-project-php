@@ -41,6 +41,9 @@ class CreateView implements CreateViewInterface
             <?php
             $this->app($this->data);
             ?>
+            <script>
+                document.getElementById('codigo').value = <?php echo $_GET['codigo']; ?>;
+            </script>
         </body>
 
         </html>
