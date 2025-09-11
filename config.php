@@ -76,7 +76,7 @@ $formMinimal = [
         // Checkbox field
         [
             "fieldType" => "checkbox",
-            "fieldLabel" => "I accept terms",
+            "fieldLabel" => "I accept the terms and conditions",
             "fieldId" => "terms",
             "fieldName" => "terms",
             "checked" => true
@@ -171,7 +171,7 @@ $formBlue = [
         // Checkbox field
         [
             "fieldType" => "checkbox",
-            "fieldLabel" => "I accept terms",
+            "fieldLabel" => "I accept the terms and conditions",
             "fieldId" => "terms",
             "fieldName" => "terms",
             "checked" => true
@@ -266,7 +266,7 @@ $formGreen = [
         // Checkbox field
         [
             "fieldType" => "checkbox",
-            "fieldLabel" => "I accept terms",
+            "fieldLabel" => "I accept the terms and conditions",
             "fieldId" => "terms",
             "fieldName" => "terms",
             "checked" => true
@@ -361,7 +361,7 @@ $formDark = [
         // Checkbox field
         [
             "fieldType" => "checkbox",
-            "fieldLabel" => "I accept terms",
+            "fieldLabel" => "I accept the terms and conditions",
             "fieldId" => "terms",
             "fieldName" => "terms",
             "checked" => true
