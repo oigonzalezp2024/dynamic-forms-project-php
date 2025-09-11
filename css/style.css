@@ -142,3 +142,53 @@ input[type="radio"] {
     height: 16px;
 }
 
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Crea un espacio de 8px entre el checkbox y el label */
+}
+
+.form-checkbox input[type="checkbox"] {
+    /* Oculta el checkbox nativo para un estilo consistente */
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-checkbox input[type="checkbox"]::before {
+    /* Crea el cuadrado visible del checkbox */
+    content: ' ';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Estilo para el cuadrado y el check cuando está marcado */
+.form-checkbox input[type="checkbox"]:checked::before {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.form-checkbox input[type="checkbox"]:checked::after {
+    /* Crea el checkmark */
+    content: '✔';
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    line-height: 18px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}

@@ -7,6 +7,14 @@ $formMinimal = [
     'formTitle' => 'Request Form',
     'buttonName' => 'Submit Request',
     'fields' => [
+        // hidden field
+        [
+            "fieldType" => "text",
+            "fieldId" => "user_id",
+            "fieldName" => "user_id",
+            "fieldValue" => "12345",
+            "hidden" => true // hidden
+        ],
         // Text field
         [
             "fieldType" => "text",
@@ -68,7 +76,7 @@ $formMinimal = [
         // Checkbox field
         [
             "fieldType" => "checkbox",
-            "fieldLabel" => "I accept the terms and conditions",
+            "fieldLabel" => "I accept terms",
             "fieldId" => "terms",
             "fieldName" => "terms",
             "checked" => true
@@ -94,6 +102,14 @@ $formBlue = [
     'formTitle' => 'Request Form',
     'buttonName' => 'Submit Request',
     'fields' => [
+        // hidden field
+        [
+            "fieldType" => "text",
+            "fieldId" => "user_id",
+            "fieldName" => "user_id",
+            "fieldValue" => "12345",
+            "hidden" => true // hidden
+        ],
         // Text field
         [
             "fieldType" => "text",
@@ -155,7 +171,7 @@ $formBlue = [
         // Checkbox field
         [
             "fieldType" => "checkbox",
-            "fieldLabel" => "I accept the terms and conditions",
+            "fieldLabel" => "I accept terms",
             "fieldId" => "terms",
             "fieldName" => "terms",
             "checked" => true
@@ -181,6 +197,14 @@ $formGreen = [
     'formTitle' => 'Request Form',
     'buttonName' => 'Submit Request',
     'fields' => [
+        // hidden field
+        [
+            "fieldType" => "text",
+            "fieldId" => "user_id",
+            "fieldName" => "user_id",
+            "fieldValue" => "12345",
+            "hidden" => true // hidden
+        ],
         // Text field
         [
             "fieldType" => "text",
@@ -242,7 +266,7 @@ $formGreen = [
         // Checkbox field
         [
             "fieldType" => "checkbox",
-            "fieldLabel" => "I accept the terms and conditions",
+            "fieldLabel" => "I accept terms",
             "fieldId" => "terms",
             "fieldName" => "terms",
             "checked" => true
@@ -268,6 +292,14 @@ $formDark = [
     'formTitle' => 'Request Form',
     'buttonName' => 'Submit Request',
     'fields' => [
+        // hidden field
+        [
+            "fieldType" => "text",
+            "fieldId" => "user_id",
+            "fieldName" => "user_id",
+            "fieldValue" => "12345",
+            "hidden" => true // hidden
+        ],
         // Text field
         [
             "fieldType" => "text",
@@ -329,7 +361,7 @@ $formDark = [
         // Checkbox field
         [
             "fieldType" => "checkbox",
-            "fieldLabel" => "I accept the terms and conditions",
+            "fieldLabel" => "I accept terms",
             "fieldId" => "terms",
             "fieldName" => "terms",
             "checked" => true
