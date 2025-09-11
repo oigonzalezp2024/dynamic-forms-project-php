@@ -45,6 +45,9 @@ class CreateForm implements CreateFormInterface
                     case 'text':
                         $this->createFieldText($field);
                         break;
+                    case 'number':
+                        $this->createFieldNumber($field);
+                        break;
                     case 'email':
                         $this->createFieldEmail($field);
                         break;
@@ -75,6 +78,11 @@ class CreateForm implements CreateFormInterface
     private function createFieldText($field)
     {
         $this->createInputField($field, 'text');
+    }
+
+    private function createFieldNumber($field)
+    {
+        $this->createInputField($field, 'number');
     }
 
     private function createFieldEmail($field)

@@ -16,6 +16,15 @@ $formMinimal = [
             "fieldValue" => "John Doe",
             "required" => true
         ],
+        // Number field
+        [
+            "fieldType" => "number",
+            "fieldLabel" => "Cell phone number",
+            "fieldId" => "cell_phone_number",
+            "fieldName" => "cell_phone_number",
+            "fieldValue" => "(+57) 3212962876",
+            "required" => true
+        ],
         // Email field
         [
             "fieldType" => "email",
@@ -92,6 +101,15 @@ $formBlue = [
             "fieldId" => "full_name",
             "fieldName" => "full_name",
             "fieldValue" => "John Doe",
+            "required" => true
+        ],
+        // Number field
+        [
+            "fieldType" => "number",
+            "fieldLabel" => "Cell phone number",
+            "fieldId" => "cell_phone_number",
+            "fieldName" => "cell_phone_number",
+            "fieldValue" => "(+57) 3212962876",
             "required" => true
         ],
         // Email field
@@ -172,6 +190,15 @@ $formGreen = [
             "fieldValue" => "John Doe",
             "required" => true
         ],
+        // Number field
+        [
+            "fieldType" => "number",
+            "fieldLabel" => "Cell phone number",
+            "fieldId" => "cell_phone_number",
+            "fieldName" => "cell_phone_number",
+            "fieldValue" => "(+57) 3212962876",
+            "required" => true
+        ],
         // Email field
         [
             "fieldType" => "email",
@@ -248,6 +275,15 @@ $formDark = [
             "fieldId" => "full_name",
             "fieldName" => "full_name",
             "fieldValue" => "John Doe",
+            "required" => true
+        ],
+        // Number field
+        [
+            "fieldType" => "number",
+            "fieldLabel" => "Cell phone number",
+            "fieldId" => "cell_phone_number",
+            "fieldName" => "cell_phone_number",
+            "fieldValue" => "(+57) 3212962876",
             "required" => true
         ],
         // Email field
