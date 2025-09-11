@@ -39,8 +39,12 @@ class CreateForm implements CreateFormInterface
             <h2><?= htmlspecialchars($this->getFormTitle() ?? '', ENT_QUOTES, 'UTF-8') ?></h2>
             <input type="hidden" id="form_id" name="form_id" value="<?= htmlspecialchars($data['form_id'] ?? '', ENT_QUOTES, 'UTF-8') ?>">
             <?php
-
             foreach ($fields as $field) {
+                if (isset($field['hidden']) && $field['hidden'] === true) {
+                    $this->createFieldHidden($field);
+                    continue;
+                }
+
                 switch ($field['fieldType']) {
                     case 'text':
                         $this->createFieldText($field);
@@ -66,7 +70,6 @@ class CreateForm implements CreateFormInterface
                     case 'radio':
                         $this->createFieldRadio($field);
                         break;
-                        // Agrega más tipos de campos aquí
                 }
             }
             ?>
@@ -156,8 +159,10 @@ class CreateForm implements CreateFormInterface
         $checked = isset($field['checked']) && $field['checked'] ? 'checked' : '';
     ?>
         <div class="form-grup">
-            <input type="checkbox" id="<?= $id ?>" name="<?= $name ?>" <?= $checked ?>>
-            <label for="<?= $id ?>"><?= $label ?></label>
+            <div class="form-checkbox">
+                <input type="checkbox" id="<?= $id ?>" name="<?= $name ?>" <?= $checked ?>>
+                <label for="<?= $id ?>"><?= $label ?></label>
+            </div>
         </div>
     <?php
     }
@@ -182,6 +187,15 @@ class CreateForm implements CreateFormInterface
                 </div>
             <?php endforeach; ?>
         </fieldset>
+<?php
+    }
+    private function createFieldHidden($field)
+    {
+        $id = htmlspecialchars($field['fieldId'] ?? '', ENT_QUOTES, 'UTF-8');
+        $name = htmlspecialchars($field['fieldName'] ?? '', ENT_QUOTES, 'UTF-8');
+        $value = htmlspecialchars($field['fieldValue'] ?? '', ENT_QUOTES, 'UTF-8');
+?>
+        <input type="hidden" id="<?= $id ?>" name="<?= $name ?>" value="<?= $value ?>">
 <?php
     }
 }
